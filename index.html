@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+            --Yellow: hsl(47, 88%, 63%);
+            --White: hsl(0, 0%, 100%);
+            --Gray: hsl(0, 0%, 50%);
+            --Black: hsl(0, 0%, 7%);
+    }
+
+    body {
+      font-family: Figtree;
+      font-size: 16px;
+      font-weight: 400;
+      background: var(--Yellow);
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+    } 
+
+    section {
+      width: 100%;
+      max-width: 300px;
+      background-color: #fff;
+      margin:5% auto;
+      padding: 17px;
+      border: 1px solid var(--Black);
+      border-radius: 15px;
+      display:flexbox;
+      box-shadow: 10px 9px 0 0px;
+    }
+
+    .illus {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .learning {
+      background-color: var(--Yellow);
+      padding: 5px 13px;
+      font-family: Figtree;
+      font-weight: 800;
+      border: none;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-weight: 800;
+    }
+    .desc {
+      color: var(--Gray);
+    }
+    .profile {
+      display: flex;
+    }
+    .profile img {
+      width: 45px;
+      height: 45px;
+    }
+    .profile p {
+      font-size: 1rem;
+      font-weight: 900;
+      padding-left: 13px;
+    }
+
+    footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0; 
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+      <img class="illus" src="assets/images/illustration-article.svg" alt="Illustration">
+    <div>
+      <button class="learning">Learning</button>
+      <p>Published 21 Dec 2023</p>
+      <h1> HTML & CSS foundations</h1>
+      <p class="desc">These languages are the backbone of every website, defining structure, content, and presentation. </p>
+    </div>
+    <div class="profile">
+      <img src="assets/images/image-avatar.webp" alt="Profile">
+      <p>Greg Hooper</p>
+    </div>
+  </section>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/pblanabelle">Anabelle Pablo</a>.
+  </footer>
+  
+</body>
+</html> 
